@@ -1,0 +1,22 @@
+{
+  "name": "media-query-react",
+  "version": "0.0.1",
+  "description": "Handle media query for react.",
+  "main": "index.js",
+  "scripts": {
+    "transpile": "babel ./src/MediaQueryReact.jsx -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohit Saxena",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^7.1.0",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1"
+  }
+}
