@@ -13,20 +13,20 @@ export default function MediaQueryReact({ mediaQueries, children }) {
 MediaQueryReact.defaultProps = {
   mediaQueries: {
     mobile: {
-      min: 320,
-      max: 480,
+      minWidth: 320,
+      maxWidth: 480,
     },
     mobileLandscape: {
-      min: 481,
-      max: 767
+      minWidth: 481,
+      maxWidth: 767,
     },
     tablet: {
-      min: 768,
-      max: 1024,
+      minWidth: 768,
+      maxWidth: 1024,
     },
     desktop: {
-      min: 1025,
-      max: 2500,
+      minWidth: 1025,
+      maxWidth: 2500,
     },
   },
 };
