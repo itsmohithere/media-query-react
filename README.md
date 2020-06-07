@@ -15,7 +15,7 @@ Easiest module to render componenets with media query.
 ## Import
 
  ```jsx
- import MediaQueryReact, { ForDevice, useMediaQuery } from 'media-query-react';
+ import MediaQueryReact, { ForDevice, useMediaQuery } from 'media-query-react/dist;
  ```
 
 ## Example
@@ -26,7 +26,7 @@ Easiest module to render componenets with media query.
 
   ```jsx
   import React from 'react';
-  import MediaQueryReact from './commonComponents/HOC/src';
+  import MediaQueryReact from 'media-query-react/dist';
 
   // Entry point
   function App() {
@@ -69,7 +69,7 @@ use ForDevice to wrap your component which need to be responsive design and to p
   ```jsx
 
   import React from 'react';
-  import { ForDevice } from '../../commonComponents/HOC/src';
+  import { ForDevice } from 'media-query-react/dist';
 
   function HeroSideBarHeader({ children }) {
     return (
@@ -105,7 +105,7 @@ use ForDevice to wrap your component which need to be responsive design and to p
 
   ```jsx
   import React, { useEffect, useState } from 'react';
-  import { useMediaQuery } from 'media-query-react';
+  import { useMediaQuery } from 'media-query-react/dist';
 
   function Header() {
     const isDesktop = useMediaQuery({ query: 'min-width: 1024px' });
