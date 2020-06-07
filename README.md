@@ -23,48 +23,6 @@ Easiest module to render componenets with media query.
 
 ## Example
 
-### With Hooks
-
-  With hooks for now support two css property
-    * max-width
-    * min-width
-
-  More css property will come in future update.
-
-  ```jsx
-  import React, { useEffect, useState } from 'react';
-  import { useMediaQuery } from 'media-query-react';
-
-  function Header() {
-    const isDesktop = useMediaQuery({ query: 'min-width: 1024px' });
-    const isTablet = useMediaQuery({ query: 'max-width: 1224px' });
-
-    return (
-      <Div className={`HeaderHeroContainer ${bgClass}`}>
-        <ListUl>
-          {
-            isDesktop && (
-              <ListLi className="contactButtonContainer">
-                <a href="mailto:itsmohitsaxenahere@gmail.com">
-                  <Span>
-                    Contact
-                  </Span>
-                </a>
-              </ListLi>
-            )
-          }
-          {
-            isTablet && <ListLi><NavLink to="/about">About</NavLink></ListLi>
-          }
-          <ListLi><NavLink to="/about">Work</NavLink></ListLi>
-        </ListUl>
-      </Div>
-    );
-  }
-
-  export default Header;
-  ```
-
 ### With Components
   
   Wrap application with MediaQueryReact HOC
@@ -109,7 +67,7 @@ Easiest module to render componenets with media query.
   export default hot(module)(App);
 
   ```
-    use ForDevice to wrap your component which need to be responsive design and to pass your customize device name from screenSize object.
+use ForDevice to wrap your component which need to be responsive design and to pass your customize device name from screenSize object.
 
   ```jsx
 
@@ -138,6 +96,48 @@ Easiest module to render componenets with media query.
 
   export default withRouter(HeroSideBarHeader);
 
+  ```
+  
+### With Hooks
+
+  With hooks for now support two css property
+    * max-width
+    * min-width
+
+  More css property will come in future update.
+
+  ```jsx
+  import React, { useEffect, useState } from 'react';
+  import { useMediaQuery } from 'media-query-react';
+
+  function Header() {
+    const isDesktop = useMediaQuery({ query: 'min-width: 1024px' });
+    const isTablet = useMediaQuery({ query: 'max-width: 1224px' });
+
+    return (
+      <Div className={`HeaderHeroContainer ${bgClass}`}>
+        <ListUl>
+          {
+            isDesktop && (
+              <ListLi className="contactButtonContainer">
+                <a href="mailto:itsmohitsaxenahere@gmail.com">
+                  <Span>
+                    Contact
+                  </Span>
+                </a>
+              </ListLi>
+            )
+          }
+          {
+            isTablet && <ListLi><NavLink to="/about">About</NavLink></ListLi>
+          }
+          <ListLi><NavLink to="/about">Work</NavLink></ListLi>
+        </ListUl>
+      </Div>
+    );
+  }
+
+  export default Header;
   ```
 
 ## API
