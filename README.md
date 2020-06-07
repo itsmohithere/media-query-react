@@ -1,5 +1,6 @@
 [npm-badge]: https://img.shields.io/npm/v/react-media.svg?style=flat-square
 [npm]: https://www.npmjs.com/package/media-query-react
+https://img.shields.io/github/license/itsmohithere/media-query-react
 
 # MEDIA-QUERY-REACT
 
