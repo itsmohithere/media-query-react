@@ -26,8 +26,8 @@ Easiest module to render componenets with media query.
 ### With Hooks
 
   With hooks for now support two css property
-    1. max-width
-    2. min-width
+    * max-width
+    * min-width
 
   More css property will come in future update.
 
@@ -69,76 +69,76 @@ Easiest module to render componenets with media query.
   
   Wrap application with MediaQueryReact HOC
 
-    ```jsx
-      import React from 'react';
-      import MediaQueryReact from './commonComponents/HOC/src';
+  ```jsx
+  import React from 'react';
+  import MediaQueryReact from './commonComponents/HOC/src';
 
-      // Entry point
-      function App() {
+  // Entry point
+  function App() {
 
-        // pass screenSize object with custom device name and width.
-        const screenSize = {
-          mobile: { // custom device name
-            minWidth: 320,
-            maxWidth: 480,
-          },
-          mobileLandscape: {
-            minWidth: 481,
-            maxWidth: 767,
-          },
-          tablet: {
-            minWidth: 768,
-            maxWidth: 1024,
-          },
-          desktop: {
-            minWidth: 1025,
-            maxWidth: 2500,
-          },
-        };
+    // pass screenSize object with custom device name and width.
+    const screenSize = {
+      mobile: { // custom device name
+        minWidth: 320,
+        maxWidth: 480,
+      },
+      mobileLandscape: {
+        minWidth: 481,
+        maxWidth: 767,
+      },
+      tablet: {
+        minWidth: 768,
+        maxWidth: 1024,
+      },
+      desktop: {
+        minWidth: 1025,
+        maxWidth: 2500,
+      },
+    };
 
-        return (
-          <CtxApp>
-          {/* Wrap application with MediaQueryReact HOC and pass prop mediaQuaries */}
-            <MediaQueryReact mediaQueries={screenSize}>
-              <Routes />
-            </MediaQueryReact>
-          </CtxApp>
-        );
-      }
+    return (
+      <CtxApp>
+      {/* Wrap application with MediaQueryReact HOC and pass prop mediaQuaries */}
+        <MediaQueryReact mediaQueries={screenSize}>
+          <Routes />
+        </MediaQueryReact>
+      </CtxApp>
+    );
+  }
 
-      export default hot(module)(App);
+  export default hot(module)(App);
 
-    ```
+  ```
     use ForDevice to wrap your component which need to be responsive design and to pass your customize device name from screenSize object.
 
-    ```jsx
+  ```jsx
 
-      import React from 'react';
-      import { ForDevice } from '../../commonComponents/HOC/src';
+  import React from 'react';
+  import { ForDevice } from '../../commonComponents/HOC/src';
 
-      function HeroSideBarHeader({ children }) {
-        return (
-          <Div>
-            {/* Pass custom device name as an array for multiple devices */}
-            <ForDevice deviceName={['tablet', 'desktop']}> 
-              <Header /> {/* <Header /> component will display only on tablet and desktop */}
-            </ForDevice>
-            {/* Pass custom device name as an string for single device */}
-            <ForDevice deviceName="mobile">
-              <Sidebar /> {/* <Sidebar /> component will display only on mobile */}
-            </ForDevice>
-            { children }
-          </Div>
-        );
-      }
+  function HeroSideBarHeader({ children }) {
+    return (
+      <Div>
+        {/* Pass custom device name as an array for multiple devices */}
+        <ForDevice deviceName={['tablet', 'desktop']}> 
+          <Header /> {/* <Header /> component will display only on tablet and desktop */}
+        </ForDevice>
+        {/* Pass custom device name as an string for single device */}
+        <ForDevice deviceName="mobile">
+          <Sidebar /> {/* <Sidebar /> component will display only on mobile */}
+        </ForDevice>
+        { children }
+      </Div>
+    );
+  }
 
-      HeroSideBarHeader.propTypes = {
-        children: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
-      };
+  HeroSideBarHeader.propTypes = {
+    children: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
+  };
 
-      export default withRouter(HeroSideBarHeader);
+  export default withRouter(HeroSideBarHeader);
 
-    ```
+  ```
 
 ## API
 
