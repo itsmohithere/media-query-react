@@ -31,39 +31,39 @@ Easiest module to render componenets with media query.
 
   More css property will come in future update.
 
-    ```jsx
-    import React, { useEffect, useState } from 'react';
-    import { useMediaQuery } from 'media-query-react';
+  ```jsx
+  import React, { useEffect, useState } from 'react';
+  import { useMediaQuery } from 'media-query-react';
 
-    function Header() {
-      const isDesktop = useMediaQuery({ query: 'min-width: 1024px' });
-      const isTablet = useMediaQuery({ query: 'max-width: 1224px' });
+  function Header() {
+    const isDesktop = useMediaQuery({ query: 'min-width: 1024px' });
+    const isTablet = useMediaQuery({ query: 'max-width: 1224px' });
 
-      return (
-        <Div className={`HeaderHeroContainer ${bgClass}`}>
-          <ListUl>
-            {
-              isDesktop && (
-                <ListLi className="contactButtonContainer">
-                  <a href="mailto:itsmohitsaxenahere@gmail.com">
-                    <Span>
-                      Contact
-                    </Span>
-                  </a>
-                </ListLi>
-              )
-            }
-            {
-              isTablet && <ListLi><NavLink to="/about">About</NavLink></ListLi>
-            }
-            <ListLi><NavLink to="/about">Work</NavLink></ListLi>
-          </ListUl>
-        </Div>
-      );
-    }
+    return (
+      <Div className={`HeaderHeroContainer ${bgClass}`}>
+        <ListUl>
+          {
+            isDesktop && (
+              <ListLi className="contactButtonContainer">
+                <a href="mailto:itsmohitsaxenahere@gmail.com">
+                  <Span>
+                    Contact
+                  </Span>
+                </a>
+              </ListLi>
+            )
+          }
+          {
+            isTablet && <ListLi><NavLink to="/about">About</NavLink></ListLi>
+          }
+          <ListLi><NavLink to="/about">Work</NavLink></ListLi>
+        </ListUl>
+      </Div>
+    );
+  }
 
-    export default Header;
-    ```
+  export default Header;
+  ```
 
 ### With Components
   
