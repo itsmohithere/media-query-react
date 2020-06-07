@@ -1,6 +1,6 @@
 {
   "name": "media-query-react",
-  "version": "0.0.6",
+  "version": "1.0.1",
   "description": "Handle media query for react.",
   "main": "dist/index.js",
   "scripts": {

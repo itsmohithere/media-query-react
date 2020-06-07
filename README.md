@@ -1,4 +1,4 @@
-# media-query-react ![License](https://img.shields.io/github/license/itsmohithere/media-query-react) ![Version](https://img.shields.io/badge/version-0.0.1-blue)
+# media-query-react ![License](https://img.shields.io/github/license/itsmohithere/media-query-react) ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 
 ## Information
 
