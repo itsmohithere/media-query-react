@@ -1,4 +1,4 @@
-# media-query-react ![License](https://img.shields.io/github/license/itsmohithere/media-query-react) ![Version](https://img.shields.io/badge/version-0.0.1-blue)
+# media-query-react ![License](https://img.shields.io/github/license/itsmohithere/media-query-react) ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 
 ## Information
 
@@ -16,7 +16,7 @@ Easiest module to render componenets with media query.
 ## Import
 
  ```jsx
- import MediaQueryReact, { ForDevice, useMediaQuery } from 'media-query-react/dist';
+ import MediaQueryReact, { ForDevice, useMediaQuery } from 'media-query-react';
  ```
 
 ## Example
@@ -27,7 +27,7 @@ Easiest module to render componenets with media query.
 
   ```jsx
   import React from 'react';
-  import MediaQueryReact from 'media-query-react/dist';
+  import MediaQueryReact from 'media-query-react';
 
   // Entry point
   function App() {
@@ -71,7 +71,7 @@ use ForDevice to wrap your component which need to be responsive design and to p
   ```jsx
 
   import React from 'react';
-  import { ForDevice } from 'media-query-react/dist';
+  import { ForDevice } from 'media-query-react';
 
   function HeroSideBarHeader({ children }) {
     return (
@@ -107,7 +107,7 @@ use ForDevice to wrap your component which need to be responsive design and to p
 
   ```jsx
   import React, { useEffect, useState } from 'react';
-  import { useMediaQuery } from 'media-query-react/dist';
+  import { useMediaQuery } from 'media-query-react';
 
   function Header() {
     const isDesktop = useMediaQuery({ query: 'min-width: 1024px' });
