@@ -17,10 +17,9 @@ Easiest module to render componenets with media query.
  ```
 ## Import
 
-    ```jsx
-    import MediaQueryReact, { ForDevice, useMediaQuery } from 'media-query-react';
-
-    ```
+ ```jsx
+ import MediaQueryReact, { ForDevice, useMediaQuery } from 'media-query-react';
+ ```
 
 ## Example
 
