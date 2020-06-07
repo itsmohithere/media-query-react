@@ -12,15 +12,12 @@
 Easiest module to render componenets with media query.
 
 ## Installation
-
+ ```console
  $ npm install --save media-query-react
-
+ ```
 ## Import
 
     ```jsx
-
-// using ES modules
-
 import MediaQueryReact, { ForDevice, useMediaQuery } from 'media-query-react';
 
     ```
