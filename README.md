@@ -5,17 +5,18 @@
 [`media-query-react`](https://www.npmjs.com/package/media-query-react) is package for React to handle media query for the responsive design.
 
 >Hooks supported
-
 Easiest module to render componenets with media query.
 
 ## Installation
+
  ```console
- $ npm install --save media-query-react
+ $npm install --save media-query-react
  ```
+
 ## Import
 
  ```jsx
- import MediaQueryReact, { ForDevice, useMediaQuery } from 'media-query-react/dist;
+ import MediaQueryReact, { ForDevice, useMediaQuery } from 'media-query-react/dist';
  ```
 
 ## Example
@@ -64,6 +65,7 @@ Easiest module to render componenets with media query.
   export default hot(module)(App);
 
   ```
+
 use ForDevice to wrap your component which need to be responsive design and to pass your customize device name from screenSize object.
 
   ```jsx
@@ -75,7 +77,7 @@ use ForDevice to wrap your component which need to be responsive design and to p
     return (
       <Div>
         {/* Pass custom device name as an array for multiple devices */}
-        <ForDevice deviceName={['tablet', 'desktop']}> 
+        <ForDevice deviceName={['tablet', 'desktop']}>
           <Header /> {/* <Header /> component will display only on tablet and desktop */}
         </ForDevice>
         {/* Pass custom device name as an string for single device */}
@@ -98,8 +100,8 @@ use ForDevice to wrap your component which need to be responsive design and to p
 ### With Hooks
 
   With hooks for now support two css property
-    * max-width
-    * min-width
+    *max-width
+    *min-width
 
   More css property will come in future update.
 
@@ -160,3 +162,7 @@ More properties will add in future release.
 ## LICENSE
 
 MIT
+
+## AUTHOR
+
+>itsmohitsaxenahere@gmail.com
