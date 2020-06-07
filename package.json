@@ -1,12 +1,16 @@
 {
   "name": "media-query-react",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Handle media query for react.",
   "main": "index.js",
   "scripts": {
-    "transpile": "babel ./src/MediaQueryReact.jsx -d dist",
+    "transpile": "babel ./src -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "dist/",
+    "package.json"
+  ],
   "author": "Mohit Saxena",
   "license": "MIT",
   "dependencies": {
