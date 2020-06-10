@@ -1,6 +1,6 @@
 {
   "name": "media-query-react",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Handle media query for react.",
   "main": "dist/index.js",
   "scripts": {
@@ -10,6 +10,17 @@
   "files": [
     "/dist",
     "package.json"
+  ],
+  "keywords": [
+    "media",
+    "react",
+    "media-query",
+    "responsive",
+    "design",
+    "hooks",
+    "MediaQuery",
+    "mobile",
+    "desktop"
   ],
   "author": "Mohit Saxena",
   "license": "MIT",
